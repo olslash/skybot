@@ -7,11 +7,7 @@ from datetime import datetime
 @hook.command('git')
 @hook.command
 def github(inp, api_key=None):
-    """ .github <query> -- returns info on the github repo or user specified in <query>
-
-        .github <name>  -- todo
-        .github <name/repo> -- todo
-    """
+    """ .github <username or username/repo> -- returns info on the github user or repo specified in <query> """
 
     if not api_key:
         return None
